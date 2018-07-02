@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+html, html * {
+  box-sizing: border-box;
+}
+html, body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+h1, h2 {
+  font-weight: 400;
+}
+a:hover,
+a:focus {
+  color: #FF00BF;
+  text-decoration: none;
+}
+.btn {
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 10px 20px;
+  color: #fff;
+}
+.subtitle {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  color: #352384;
+  text-transform: uppercase;
+}
+.overtitle {
+  font-size: 14px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+#home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  background-image:url('../assets/images/hero.gif');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color:#fff;
+  padding: 20px 60px;
+}
+#logo {
+  width: 80px;
+  height: auto;
+}
+#logo img {
+  width: 100%;
+}
+header ul {
+  list-style: none;
+}
+header ul li {
+  display: inline-block;
+  margin-left:30px;
+}
+#menu a {
+  color: #fff;
+  text-decoration: none;
+}
+#menu a:hover,
+#menu a:focus {
+  color:#FF00BF;
+}
+#menu button:hover,
+#menu button:focus {
+  color:#FF00BF;
+  border: 2px solid #FF00BF;
+  cursor: pointer;
+}
+
+#home .signup {
+  padding: 40px;
+  padding-top: 10px;
+  background-color: #fff;
+  color: #728099;
+  font-size: 12px;
+  z-index: 10;
+}
+#home .signup h1 {
+  color: #352384;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.signup form,
+.signup form input {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.signup form input {
+  font-size: 1rem;
+  border:0;
+  border-bottom: 1px solid #352384;
+  color: #728099;
+  padding: 10px 0;
+}
+.signup form .btn {
+  background-color: #FF00BF;
+  padding: 15px 20px;
+  margin-right: 20px;
+}
+
+#features {
+  display: flex;
+  background:linear-gradient(#76278F, #2B1E66);
+  justify-content: center;
+  color:#fff;
+  padding: 60px;
+  position: relative;
+}
+#features > div {
+  width: 40%;
+}
+#features > div > div {
+  margin-bottom: 60px;
+}
+#features > div > div:last-child h2 {
+  margin:0;
+}
+#features img {
+  width: 100%;
+}
+#features p {
+  font-size: 14px;
+}
+
+#features::before {
+  content: '';
+  width: 100%;
+  height: 50px;
+  background:linear-gradient(transparent, #76278F);
+  position: absolute;
+  display: block;
+  top:-50px;
+}
+
+.video {
+  display: flex;
+}
+.video > div {
+  flex:2;
+}
+.video iframe {
+  width: 100%;
+  min-height: 470px;
+}
+.video .vtext {
+  padding: 40px;
+  flex:1;
+}
+.video h2 {
+  margin-top: 0;
+}
+
+footer {
+  background-color: #333447;
+  padding: 40px;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer  > div {
+  flex:1 100%;
+}
+footer .links {
+  display: flex;
+  justify-content: space-around;
+
+}
+footer .links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer .links ul li {
+  padding: 15px;
+}
+footer .links h3 {
+  margin: 0;
+  padding: 0;
+}
+footer ul.lojas {
+  padding-top: 20px;
+}
+
+footer .lojas img {
+  width: 120px;
+  height: auto;
+}
+footer .copy {
+  text-align: center;
+  margin-top: 60px;
+}
+footer .copy hr {
+  width: 50%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+footer .social a {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  padding: 8px 0;
+  margin: 0 40px;
+}
+footer .social a:hover,
+footer .social a :focus {
+  border: 2px solid #FF00BF;
+  color: #FF00BF;
+}
+.v2, .v3, footer {
+  margin-top:-5px;
+}
